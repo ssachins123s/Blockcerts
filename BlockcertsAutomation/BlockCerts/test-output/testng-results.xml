@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="14" failed="7" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome browser is launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[No hyperlink associated with Blockcerts Logo. Failed to redirect to Homepage upon clicking]]>
+    </line>
+    <line>
+      <![CDATA[Placeholder inside Email and Password fields is verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Able to select and deselect 'Remember my Credentials' checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Login button is disabled as expected before Email and Password are entered]]>
+    </line>
+    <line>
+      <![CDATA[Login button is enabled as expected after entering Email and Password]]>
+    </line>
+    <line>
+      <![CDATA[Only 2 hyperlinks are found as expected in the SignIn Page associated with 'Recover your Password' and 'Create your Account']]>
+    </line>
+    <line>
+      <![CDATA[Click on 'Recover your Password' is redirecting the current browser window to Forgot Password page as expected]]>
+    </line>
+    <line>
+      <![CDATA[We are able to Right-Click on 'Recover your Password' and open the hyperlink in a new window sucessfully]]>
+    </line>
+    <line>
+      <![CDATA['Create your Account' button is associated with SignUp page's hyperlink as expected]]>
+    </line>
+    <line>
+      <![CDATA[We are able to Right-Click on 'Create your Account' and open the hyperlink in a new window sucessfully]]>
+    </line>
+    <line>
+      <![CDATA[Click on 'Create your Account' is redirecting the current browser window to Create Account page as expected]]>
+    </line>
+    <line>
+      <![CDATA[Blockcerts Logo hyperlink in Create Account page is associated with SignIn page as expected]]>
+    </line>
+    <line>
+      <![CDATA[Placeholder inside Email field is verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Error in displaying 'Create your Account' button in Create Account page]]>
+    </line>
+    <line>
+      <![CDATA['Login Instead' link in Create Account page is displayed as expected with hyperlink associated with SignIn page]]>
+    </line>
+    <line>
+      <![CDATA[Blockcerts Logo hyperlink in SignUp page is associated with SignIn page as expected]]>
+    </line>
+    <line>
+      <![CDATA[Unable to locate Placeholder inside one or more fields in the SignUp page]]>
+    </line>
+    <line>
+      <![CDATA['Create your Account' button is displayed in the SignUp page as expected]]>
+    </line>
+    <line>
+      <![CDATA['Login Instead' link in SignUp page is displayed as expected with hyperlink associated with SignIn page]]>
+    </line>
+    <line>
+      <![CDATA[Incorrect error message displayed for missing mandatory fields]]>
+    </line>
+    <line>
+      <![CDATA[Email in SignUp page should be a disabled field]]>
+    </line>
+    <line>
+      <![CDATA[Error in checking Validation message displayed for Mobile Number field]]>
+    </line>
+    <line>
+      <![CDATA[Failed to create new user. Please review the input fields]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-02-15T22:28:01 EST" name="Default suite" finished-at="2022-02-15T22:29:11 EST" duration-ms="70023">
+    <groups>
+    </groups>
+    <test started-at="2022-02-15T22:28:01 EST" name="Default test" finished-at="2022-02-15T22:29:11 EST" duration-ms="70023">
+      <class name="test.blockcertsTest">
+        <test-method signature="launchBrowser()[pri:0, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:01 EST" name="launchBrowser" finished-at="2022-02-15T22:28:08 EST" duration-ms="7078" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser is launched successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="signInPageLogoTest()[pri:1, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:08 EST" name="signInPageLogoTest" finished-at="2022-02-15T22:28:08 EST" duration-ms="138" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at test.blockcertsTest.signInPageLogoTest(blockcertsTest.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[No hyperlink associated with Blockcerts Logo. Failed to redirect to Homepage upon clicking]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInPageLogoTest -->
+        <test-method signature="signInPagePlaceholderTest()[pri:2, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:08 EST" name="signInPagePlaceholderTest" finished-at="2022-02-15T22:28:08 EST" duration-ms="80" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Placeholder inside Email and Password fields is verified successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInPagePlaceholderTest -->
+        <test-method signature="signInPageCheckBoxTest()[pri:3, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:08 EST" name="signInPageCheckBoxTest" finished-at="2022-02-15T22:28:12 EST" duration-ms="3094" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Able to select and deselect 'Remember my Credentials' checkbox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInPageCheckBoxTest -->
+        <test-method signature="signInPageLoginButtonTest()[pri:4, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:12 EST" name="signInPageLoginButtonTest" finished-at="2022-02-15T22:28:18 EST" duration-ms="6307" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login button is disabled as expected before Email and Password are entered]]>
+            </line>
+            <line>
+              <![CDATA[Login button is enabled as expected after entering Email and Password]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInPageLoginButtonTest -->
+        <test-method signature="signInPageHyperlinksTest()[pri:5, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:18 EST" name="signInPageHyperlinksTest" finished-at="2022-02-15T22:28:18 EST" duration-ms="89" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Only 2 hyperlinks are found as expected in the SignIn Page associated with 'Recover your Password' and 'Create your Account']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInPageHyperlinksTest -->
+        <test-method signature="signInPageRecoverPasswordTest()[pri:6, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:18 EST" name="signInPageRecoverPasswordTest" finished-at="2022-02-15T22:28:32 EST" duration-ms="14034" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on 'Recover your Password' is redirecting the current browser window to Forgot Password page as expected]]>
+            </line>
+            <line>
+              <![CDATA[We are able to Right-Click on 'Recover your Password' and open the hyperlink in a new window sucessfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInPageRecoverPasswordTest -->
+        <test-method signature="signInPageCreateYourAccountButtonTest()[pri:7, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:32 EST" name="signInPageCreateYourAccountButtonTest" finished-at="2022-02-15T22:28:34 EST" duration-ms="1585" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA['Create your Account' button is associated with SignUp page's hyperlink as expected]]>
+            </line>
+            <line>
+              <![CDATA[We are able to Right-Click on 'Create your Account' and open the hyperlink in a new window sucessfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInPageCreateYourAccountButtonTest -->
+        <test-method signature="createAccountPageURLTest()[pri:8, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:34 EST" name="createAccountPageURLTest" finished-at="2022-02-15T22:28:37 EST" duration-ms="3248" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Click on 'Create your Account' is redirecting the current browser window to Create Account page as expected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAccountPageURLTest -->
+        <test-method signature="createAccountPageLogoTest()[pri:9, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:37 EST" name="createAccountPageLogoTest" finished-at="2022-02-15T22:28:37 EST" duration-ms="65" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Blockcerts Logo hyperlink in Create Account page is associated with SignIn page as expected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAccountPageLogoTest -->
+        <test-method signature="createAccountPagePlaceholderTest()[pri:10, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:37 EST" name="createAccountPagePlaceholderTest" finished-at="2022-02-15T22:28:37 EST" duration-ms="36" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Placeholder inside Email field is verified successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAccountPagePlaceholderTest -->
+        <test-method signature="createAccountPageButtonTest()[pri:11, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:37 EST" name="createAccountPageButtonTest" finished-at="2022-02-15T22:28:37 EST" duration-ms="31" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at test.blockcertsTest.createAccountPageButtonTest(blockcertsTest.java:477)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Error in displaying 'Create your Account' button in Create Account page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAccountPageButtonTest -->
+        <test-method signature="createAccountPageLoginInsteadTest()[pri:12, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:37 EST" name="createAccountPageLoginInsteadTest" finished-at="2022-02-15T22:28:37 EST" duration-ms="34" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA['Login Instead' link in Create Account page is displayed as expected with hyperlink associated with SignIn page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAccountPageLoginInsteadTest -->
+        <test-method signature="signUpPageLogoTest()[pri:13, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:37 EST" name="signUpPageLogoTest" finished-at="2022-02-15T22:28:37 EST" duration-ms="379" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Blockcerts Logo hyperlink in SignUp page is associated with SignIn page as expected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpPageLogoTest -->
+        <test-method signature="signUpPagePlaceholderTest()[pri:14, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:37 EST" name="signUpPagePlaceholderTest" finished-at="2022-02-15T22:28:47 EST" duration-ms="10067" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at test.blockcertsTest.signUpPagePlaceholderTest(blockcertsTest.java:592)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Unable to locate Placeholder inside one or more fields in the SignUp page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpPagePlaceholderTest -->
+        <test-method signature="signUpPageCreateButtonTest()[pri:15, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:47 EST" name="signUpPageCreateButtonTest" finished-at="2022-02-15T22:28:47 EST" duration-ms="39" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA['Create your Account' button is displayed in the SignUp page as expected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpPageCreateButtonTest -->
+        <test-method signature="signUpPageLoginInsteadTest()[pri:16, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:47 EST" name="signUpPageLoginInsteadTest" finished-at="2022-02-15T22:28:48 EST" duration-ms="27" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA['Login Instead' link in SignUp page is displayed as expected with hyperlink associated with SignIn page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpPageLoginInsteadTest -->
+        <test-method signature="mandatoryFieldsTest()[pri:17, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:48 EST" name="mandatoryFieldsTest" finished-at="2022-02-15T22:28:51 EST" duration-ms="3386" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at test.blockcertsTest.mandatoryFieldsTest(blockcertsTest.java:686)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Incorrect error message displayed for missing mandatory fields]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- mandatoryFieldsTest -->
+        <test-method signature="signUpPageEmailTest()[pri:19, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:51 EST" name="signUpPageEmailTest" finished-at="2022-02-15T22:28:51 EST" duration-ms="57" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at test.blockcertsTest.signUpPageEmailTest(blockcertsTest.java:720)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Email in SignUp page should be a disabled field]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpPageEmailTest -->
+        <test-method signature="signUpPageNegativeFieldValidation()[pri:20, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:28:51 EST" name="signUpPageNegativeFieldValidation" finished-at="2022-02-15T22:29:01 EST" duration-ms="10032" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at test.blockcertsTest.signUpPageNegativeFieldValidation(blockcertsTest.java:776)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Error in checking Validation message displayed for Mobile Number field]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpPageNegativeFieldValidation -->
+        <test-method signature="signUpPagePositiveFieldValidation()[pri:21, instance:test.blockcertsTest@5d7148e2]" started-at="2022-02-15T22:29:01 EST" name="signUpPagePositiveFieldValidation" finished-at="2022-02-15T22:29:11 EST" duration-ms="10043" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at test.blockcertsTest.signUpPagePositiveFieldValidation(blockcertsTest.java:823)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Failed to create new user. Please review the input fields]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signUpPagePositiveFieldValidation -->
+      </class> <!-- test.blockcertsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
